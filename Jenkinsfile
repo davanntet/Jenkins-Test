@@ -18,7 +18,7 @@ pipeline{
                 script {
                     echo "Setting up Python environment..."
                     sh "python3 -m venv ${VENV_NAME}"
-                    sh ". ${VENV_NAME}/bin/activate"
+                    sh "source ${VENV_NAME}/bin/activate"
                     sh "pip install -e ."
                 }
             }
