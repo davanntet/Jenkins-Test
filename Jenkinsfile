@@ -2,7 +2,6 @@ pipeline{
     agent any
     environment {
         VENV_NAME = 'venv'
-        PYTHON_VERSION = '3.11.0'
     }
     stages {
         stage('Stage 1: Clone Repository') {
@@ -18,7 +17,7 @@ pipeline{
             steps {
                 script {
                     echo "Setting up Python environment..."
-                    sh "python${PYTHON_VERSION} -m venv ${VENV_NAME}"
+                    sh "python3 -m venv ${VENV_NAME}"
                     sh ". ${VENV_NAME}/bin/activate"
                     sh "pip install --upgrade pip"
                     sh "pip install -e ."
