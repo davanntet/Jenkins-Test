@@ -1,0 +1,4 @@
+pyyaml
+google-cloud-storage
+pandas
+scikit-learn

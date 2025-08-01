@@ -1,0 +1,4 @@
+data-ingestion:
+  bucket-name: "space_bucket_1972"
+  blob-name: "Hotel_Reservations.csv"
+  train-size: 0.8
