@@ -42,17 +42,6 @@ pipeline{
             }
         }
 
-        stage('Stage 4: Run Data Ingestion') {
-            steps {
-                script {
-                    echo "Running data ingestion..."
-                    sh """
-                    . ${VENV_NAME}/bin/activate
-                    python -m src.data_ingestion
-                    """
-                }
-            }
-        }
     }
 
     post {
